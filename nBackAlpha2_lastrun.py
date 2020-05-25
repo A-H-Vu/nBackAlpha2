@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.3),
-    on May 24, 2020, at 16:07
+    on May 25, 2020, at 15:19
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -103,29 +103,29 @@ fix1 = visual.TextStim(win=win, name='fix1',
 
 # Initialize components for Routine "trial1"
 trial1Clock = core.Clock()
-gridLines1 = visual.ImageStim(
+trial1Grid = visual.ImageStim(
     win=win,
-    name='gridLines1', 
+    name='trial1Grid', 
     image='grid.png', mask=None,
     ori=0, pos=(0, 0), size=[0.6, 0.6],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-tarSquare1 = visual.Rect(
-    win=win, name='tarSquare1',
+trial1Square = visual.Rect(
+    win=win, name='trial1Square',
     width=[0.15,0.15][0], height=[0.15,0.15][1],
     ori=0.0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-fixTrial1 = visual.TextStim(win=win, name='fixTrial1',
+trial1Fix = visual.TextStim(win=win, name='trial1Fix',
     text='+',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
-keyRespTrial1 = keyboard.Keyboard()
+trial1Resp = keyboard.Keyboard()
 
 # Initialize components for Routine "instructions2"
 instructions2Clock = core.Clock()
@@ -150,34 +150,34 @@ fix2 = visual.TextStim(win=win, name='fix2',
 
 # Initialize components for Routine "trial2"
 trial2Clock = core.Clock()
-gridLines2 = visual.ImageStim(
+trial2Grid = visual.ImageStim(
     win=win,
-    name='gridLines2', 
+    name='trial2Grid', 
     image='grid.png', mask=None,
     ori=0, pos=(0, 0), size=[0.6, 0.6],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-tarSquare2 = visual.Rect(
-    win=win, name='tarSquare2',
+trial2Square = visual.Rect(
+    win=win, name='trial2Square',
     width=[0.15,0.15][0], height=[0.15,0.15][1],
     ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-fixTrial2 = visual.TextStim(win=win, name='fixTrial2',
+trial2Fix = visual.TextStim(win=win, name='trial2Fix',
     text='+',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
-keyRespTrial2 = keyboard.Keyboard()
+trial2Resp = keyboard.Keyboard()
 
 # Initialize components for Routine "instructions3"
 instructions3Clock = core.Clock()
 instr3 = visual.TextStim(win=win, name='instr3',
-    text='This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on one trial before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue.',
+    text='This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on two trials before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue.',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -197,29 +197,29 @@ fix3 = visual.TextStim(win=win, name='fix3',
 
 # Initialize components for Routine "trial3"
 trial3Clock = core.Clock()
-gridLines3 = visual.ImageStim(
+trial3Grid = visual.ImageStim(
     win=win,
-    name='gridLines3', 
+    name='trial3Grid', 
     image='grid.png', mask=None,
     ori=0, pos=(0, 0), size=(0.6, 0.6),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-tarSquare3 = visual.Rect(
-    win=win, name='tarSquare3',
+trial3Square = visual.Rect(
+    win=win, name='trial3Square',
     width=(0.15, 0.15)[0], height=(0.15, 0.15)[1],
     ori=0, pos=[0,0],
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[1,1,1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
-fixTrial3 = visual.TextStim(win=win, name='fixTrial3',
+trial3Fix = visual.TextStim(win=win, name='trial3Fix',
     text='+',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
-keyRespTrial3 = keyboard.Keyboard()
+trial3Resp = keyboard.Keyboard()
 
 # Initialize components for Routine "end"
 endClock = core.Clock()
@@ -423,12 +423,12 @@ for thisTrials1 in trials1:
     continueRoutine = True
     routineTimer.add(2.000000)
     # update component parameters for each repeat
-    tarSquare1.setPos([loc1T1,loc2T1])
-    keyRespTrial1.keys = []
-    keyRespTrial1.rt = []
-    _keyRespTrial1_allKeys = []
+    trial1Square.setPos([loc1,loc2])
+    trial1Resp.keys = []
+    trial1Resp.rt = []
+    _trial1Resp_allKeys = []
     # keep track of which components have finished
-    trial1Components = [gridLines1, tarSquare1, fixTrial1, keyRespTrial1]
+    trial1Components = [trial1Grid, trial1Square, trial1Fix, trial1Resp]
     for thisComponent in trial1Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -451,89 +451,89 @@ for thisTrials1 in trials1:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *gridLines1* updates
-        if gridLines1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial1Grid* updates
+        if trial1Grid.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            gridLines1.frameNStart = frameN  # exact frame index
-            gridLines1.tStart = t  # local t and not account for scr refresh
-            gridLines1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(gridLines1, 'tStartRefresh')  # time at next scr refresh
-            gridLines1.setAutoDraw(True)
-        if gridLines1.status == STARTED:
+            trial1Grid.frameNStart = frameN  # exact frame index
+            trial1Grid.tStart = t  # local t and not account for scr refresh
+            trial1Grid.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial1Grid, 'tStartRefresh')  # time at next scr refresh
+            trial1Grid.setAutoDraw(True)
+        if trial1Grid.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > gridLines1.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > trial1Grid.tStartRefresh + 2-frameTolerance:
                 # keep track of stop time/frame for later
-                gridLines1.tStop = t  # not accounting for scr refresh
-                gridLines1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(gridLines1, 'tStopRefresh')  # time at next scr refresh
-                gridLines1.setAutoDraw(False)
+                trial1Grid.tStop = t  # not accounting for scr refresh
+                trial1Grid.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial1Grid, 'tStopRefresh')  # time at next scr refresh
+                trial1Grid.setAutoDraw(False)
         
-        # *tarSquare1* updates
-        if tarSquare1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial1Square* updates
+        if trial1Square.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            tarSquare1.frameNStart = frameN  # exact frame index
-            tarSquare1.tStart = t  # local t and not account for scr refresh
-            tarSquare1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(tarSquare1, 'tStartRefresh')  # time at next scr refresh
-            tarSquare1.setAutoDraw(True)
-        if tarSquare1.status == STARTED:
+            trial1Square.frameNStart = frameN  # exact frame index
+            trial1Square.tStart = t  # local t and not account for scr refresh
+            trial1Square.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial1Square, 'tStartRefresh')  # time at next scr refresh
+            trial1Square.setAutoDraw(True)
+        if trial1Square.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > tarSquare1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial1Square.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                tarSquare1.tStop = t  # not accounting for scr refresh
-                tarSquare1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(tarSquare1, 'tStopRefresh')  # time at next scr refresh
-                tarSquare1.setAutoDraw(False)
+                trial1Square.tStop = t  # not accounting for scr refresh
+                trial1Square.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial1Square, 'tStopRefresh')  # time at next scr refresh
+                trial1Square.setAutoDraw(False)
         
-        # *fixTrial1* updates
-        if fixTrial1.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *trial1Fix* updates
+        if trial1Fix.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            fixTrial1.frameNStart = frameN  # exact frame index
-            fixTrial1.tStart = t  # local t and not account for scr refresh
-            fixTrial1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixTrial1, 'tStartRefresh')  # time at next scr refresh
-            fixTrial1.setAutoDraw(True)
-        if fixTrial1.status == STARTED:
+            trial1Fix.frameNStart = frameN  # exact frame index
+            trial1Fix.tStart = t  # local t and not account for scr refresh
+            trial1Fix.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial1Fix, 'tStartRefresh')  # time at next scr refresh
+            trial1Fix.setAutoDraw(True)
+        if trial1Fix.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixTrial1.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial1Fix.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                fixTrial1.tStop = t  # not accounting for scr refresh
-                fixTrial1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(fixTrial1, 'tStopRefresh')  # time at next scr refresh
-                fixTrial1.setAutoDraw(False)
+                trial1Fix.tStop = t  # not accounting for scr refresh
+                trial1Fix.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial1Fix, 'tStopRefresh')  # time at next scr refresh
+                trial1Fix.setAutoDraw(False)
         
-        # *keyRespTrial1* updates
+        # *trial1Resp* updates
         waitOnFlip = False
-        if keyRespTrial1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if trial1Resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            keyRespTrial1.frameNStart = frameN  # exact frame index
-            keyRespTrial1.tStart = t  # local t and not account for scr refresh
-            keyRespTrial1.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(keyRespTrial1, 'tStartRefresh')  # time at next scr refresh
-            keyRespTrial1.status = STARTED
+            trial1Resp.frameNStart = frameN  # exact frame index
+            trial1Resp.tStart = t  # local t and not account for scr refresh
+            trial1Resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial1Resp, 'tStartRefresh')  # time at next scr refresh
+            trial1Resp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(keyRespTrial1.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(keyRespTrial1.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if keyRespTrial1.status == STARTED:
+            win.callOnFlip(trial1Resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(trial1Resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if trial1Resp.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > keyRespTrial1.tStartRefresh + 2-frameTolerance:
+            if tThisFlipGlobal > trial1Resp.tStartRefresh + 2-frameTolerance:
                 # keep track of stop time/frame for later
-                keyRespTrial1.tStop = t  # not accounting for scr refresh
-                keyRespTrial1.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(keyRespTrial1, 'tStopRefresh')  # time at next scr refresh
-                keyRespTrial1.status = FINISHED
-        if keyRespTrial1.status == STARTED and not waitOnFlip:
-            theseKeys = keyRespTrial1.getKeys(keyList=['space'], waitRelease=False)
-            _keyRespTrial1_allKeys.extend(theseKeys)
-            if len(_keyRespTrial1_allKeys):
-                keyRespTrial1.keys = _keyRespTrial1_allKeys[-1].name  # just the last key pressed
-                keyRespTrial1.rt = _keyRespTrial1_allKeys[-1].rt
+                trial1Resp.tStop = t  # not accounting for scr refresh
+                trial1Resp.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial1Resp, 'tStopRefresh')  # time at next scr refresh
+                trial1Resp.status = FINISHED
+        if trial1Resp.status == STARTED and not waitOnFlip:
+            theseKeys = trial1Resp.getKeys(keyList=['space'], waitRelease=False)
+            _trial1Resp_allKeys.extend(theseKeys)
+            if len(_trial1Resp_allKeys):
+                trial1Resp.keys = _trial1Resp_allKeys[-1].name  # just the last key pressed
+                trial1Resp.rt = _trial1Resp_allKeys[-1].rt
                 # was this correct?
-                if (keyRespTrial1.keys == str(corrAnsT1)) or (keyRespTrial1.keys == corrAnsT1):
-                    keyRespTrial1.corr = 1
+                if (trial1Resp.keys == str(corrAns)) or (trial1Resp.keys == corrAns):
+                    trial1Resp.corr = 1
                 else:
-                    keyRespTrial1.corr = 0
+                    trial1Resp.corr = 0
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -556,27 +556,27 @@ for thisTrials1 in trials1:
     for thisComponent in trial1Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials1.addData('gridLines1.started', gridLines1.tStartRefresh)
-    trials1.addData('gridLines1.stopped', gridLines1.tStopRefresh)
-    trials1.addData('tarSquare1.started', tarSquare1.tStartRefresh)
-    trials1.addData('tarSquare1.stopped', tarSquare1.tStopRefresh)
-    trials1.addData('fixTrial1.started', fixTrial1.tStartRefresh)
-    trials1.addData('fixTrial1.stopped', fixTrial1.tStopRefresh)
+    trials1.addData('trial1Grid.started', trial1Grid.tStartRefresh)
+    trials1.addData('trial1Grid.stopped', trial1Grid.tStopRefresh)
+    trials1.addData('trial1Square.started', trial1Square.tStartRefresh)
+    trials1.addData('trial1Square.stopped', trial1Square.tStopRefresh)
+    trials1.addData('trial1Fix.started', trial1Fix.tStartRefresh)
+    trials1.addData('trial1Fix.stopped', trial1Fix.tStopRefresh)
     # check responses
-    if keyRespTrial1.keys in ['', [], None]:  # No response was made
-        keyRespTrial1.keys = None
+    if trial1Resp.keys in ['', [], None]:  # No response was made
+        trial1Resp.keys = None
         # was no response the correct answer?!
-        if str(corrAnsT1).lower() == 'none':
-           keyRespTrial1.corr = 1;  # correct non-response
+        if str(corrAns).lower() == 'none':
+           trial1Resp.corr = 1;  # correct non-response
         else:
-           keyRespTrial1.corr = 0;  # failed to respond (incorrectly)
+           trial1Resp.corr = 0;  # failed to respond (incorrectly)
     # store data for trials1 (TrialHandler)
-    trials1.addData('keyRespTrial1.keys',keyRespTrial1.keys)
-    trials1.addData('keyRespTrial1.corr', keyRespTrial1.corr)
-    if keyRespTrial1.keys != None:  # we had a response
-        trials1.addData('keyRespTrial1.rt', keyRespTrial1.rt)
-    trials1.addData('keyRespTrial1.started', keyRespTrial1.tStartRefresh)
-    trials1.addData('keyRespTrial1.stopped', keyRespTrial1.tStopRefresh)
+    trials1.addData('trial1Resp.keys',trial1Resp.keys)
+    trials1.addData('trial1Resp.corr', trial1Resp.corr)
+    if trial1Resp.keys != None:  # we had a response
+        trials1.addData('trial1Resp.rt', trial1Resp.rt)
+    trials1.addData('trial1Resp.started', trial1Resp.tStartRefresh)
+    trials1.addData('trial1Resp.stopped', trial1Resp.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1 repeats of 'trials1'
@@ -770,12 +770,12 @@ for thisTrials2 in trials2:
     continueRoutine = True
     routineTimer.add(2.000000)
     # update component parameters for each repeat
-    tarSquare2.setPos([loc1T2,loc2T2])
-    keyRespTrial2.keys = []
-    keyRespTrial2.rt = []
-    _keyRespTrial2_allKeys = []
+    trial2Square.setPos([loc1,loc2])
+    trial2Resp.keys = []
+    trial2Resp.rt = []
+    _trial2Resp_allKeys = []
     # keep track of which components have finished
-    trial2Components = [gridLines2, tarSquare2, fixTrial2, keyRespTrial2]
+    trial2Components = [trial2Grid, trial2Square, trial2Fix, trial2Resp]
     for thisComponent in trial2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -798,89 +798,89 @@ for thisTrials2 in trials2:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *gridLines2* updates
-        if gridLines2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial2Grid* updates
+        if trial2Grid.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            gridLines2.frameNStart = frameN  # exact frame index
-            gridLines2.tStart = t  # local t and not account for scr refresh
-            gridLines2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(gridLines2, 'tStartRefresh')  # time at next scr refresh
-            gridLines2.setAutoDraw(True)
-        if gridLines2.status == STARTED:
+            trial2Grid.frameNStart = frameN  # exact frame index
+            trial2Grid.tStart = t  # local t and not account for scr refresh
+            trial2Grid.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial2Grid, 'tStartRefresh')  # time at next scr refresh
+            trial2Grid.setAutoDraw(True)
+        if trial2Grid.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > gridLines2.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > trial2Grid.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
-                gridLines2.tStop = t  # not accounting for scr refresh
-                gridLines2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(gridLines2, 'tStopRefresh')  # time at next scr refresh
-                gridLines2.setAutoDraw(False)
+                trial2Grid.tStop = t  # not accounting for scr refresh
+                trial2Grid.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial2Grid, 'tStopRefresh')  # time at next scr refresh
+                trial2Grid.setAutoDraw(False)
         
-        # *tarSquare2* updates
-        if tarSquare2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial2Square* updates
+        if trial2Square.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            tarSquare2.frameNStart = frameN  # exact frame index
-            tarSquare2.tStart = t  # local t and not account for scr refresh
-            tarSquare2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(tarSquare2, 'tStartRefresh')  # time at next scr refresh
-            tarSquare2.setAutoDraw(True)
-        if tarSquare2.status == STARTED:
+            trial2Square.frameNStart = frameN  # exact frame index
+            trial2Square.tStart = t  # local t and not account for scr refresh
+            trial2Square.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial2Square, 'tStartRefresh')  # time at next scr refresh
+            trial2Square.setAutoDraw(True)
+        if trial2Square.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > tarSquare2.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial2Square.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                tarSquare2.tStop = t  # not accounting for scr refresh
-                tarSquare2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(tarSquare2, 'tStopRefresh')  # time at next scr refresh
-                tarSquare2.setAutoDraw(False)
+                trial2Square.tStop = t  # not accounting for scr refresh
+                trial2Square.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial2Square, 'tStopRefresh')  # time at next scr refresh
+                trial2Square.setAutoDraw(False)
         
-        # *fixTrial2* updates
-        if fixTrial2.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *trial2Fix* updates
+        if trial2Fix.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            fixTrial2.frameNStart = frameN  # exact frame index
-            fixTrial2.tStart = t  # local t and not account for scr refresh
-            fixTrial2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixTrial2, 'tStartRefresh')  # time at next scr refresh
-            fixTrial2.setAutoDraw(True)
-        if fixTrial2.status == STARTED:
+            trial2Fix.frameNStart = frameN  # exact frame index
+            trial2Fix.tStart = t  # local t and not account for scr refresh
+            trial2Fix.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial2Fix, 'tStartRefresh')  # time at next scr refresh
+            trial2Fix.setAutoDraw(True)
+        if trial2Fix.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixTrial2.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial2Fix.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                fixTrial2.tStop = t  # not accounting for scr refresh
-                fixTrial2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(fixTrial2, 'tStopRefresh')  # time at next scr refresh
-                fixTrial2.setAutoDraw(False)
+                trial2Fix.tStop = t  # not accounting for scr refresh
+                trial2Fix.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial2Fix, 'tStopRefresh')  # time at next scr refresh
+                trial2Fix.setAutoDraw(False)
         
-        # *keyRespTrial2* updates
+        # *trial2Resp* updates
         waitOnFlip = False
-        if keyRespTrial2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if trial2Resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            keyRespTrial2.frameNStart = frameN  # exact frame index
-            keyRespTrial2.tStart = t  # local t and not account for scr refresh
-            keyRespTrial2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(keyRespTrial2, 'tStartRefresh')  # time at next scr refresh
-            keyRespTrial2.status = STARTED
+            trial2Resp.frameNStart = frameN  # exact frame index
+            trial2Resp.tStart = t  # local t and not account for scr refresh
+            trial2Resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial2Resp, 'tStartRefresh')  # time at next scr refresh
+            trial2Resp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(keyRespTrial2.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(keyRespTrial2.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if keyRespTrial2.status == STARTED:
+            win.callOnFlip(trial2Resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(trial2Resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if trial2Resp.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > keyRespTrial2.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > trial2Resp.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
-                keyRespTrial2.tStop = t  # not accounting for scr refresh
-                keyRespTrial2.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(keyRespTrial2, 'tStopRefresh')  # time at next scr refresh
-                keyRespTrial2.status = FINISHED
-        if keyRespTrial2.status == STARTED and not waitOnFlip:
-            theseKeys = keyRespTrial2.getKeys(keyList=['space'], waitRelease=False)
-            _keyRespTrial2_allKeys.extend(theseKeys)
-            if len(_keyRespTrial2_allKeys):
-                keyRespTrial2.keys = _keyRespTrial2_allKeys[-1].name  # just the last key pressed
-                keyRespTrial2.rt = _keyRespTrial2_allKeys[-1].rt
+                trial2Resp.tStop = t  # not accounting for scr refresh
+                trial2Resp.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial2Resp, 'tStopRefresh')  # time at next scr refresh
+                trial2Resp.status = FINISHED
+        if trial2Resp.status == STARTED and not waitOnFlip:
+            theseKeys = trial2Resp.getKeys(keyList=['space'], waitRelease=False)
+            _trial2Resp_allKeys.extend(theseKeys)
+            if len(_trial2Resp_allKeys):
+                trial2Resp.keys = _trial2Resp_allKeys[-1].name  # just the last key pressed
+                trial2Resp.rt = _trial2Resp_allKeys[-1].rt
                 # was this correct?
-                if (keyRespTrial2.keys == str(corrAnsT2)) or (keyRespTrial2.keys == corrAnsT2):
-                    keyRespTrial2.corr = 1
+                if (trial2Resp.keys == str(corrAns)) or (trial2Resp.keys == corrAns):
+                    trial2Resp.corr = 1
                 else:
-                    keyRespTrial2.corr = 0
+                    trial2Resp.corr = 0
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -903,27 +903,27 @@ for thisTrials2 in trials2:
     for thisComponent in trial2Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials2.addData('gridLines2.started', gridLines2.tStartRefresh)
-    trials2.addData('gridLines2.stopped', gridLines2.tStopRefresh)
-    trials2.addData('tarSquare2.started', tarSquare2.tStartRefresh)
-    trials2.addData('tarSquare2.stopped', tarSquare2.tStopRefresh)
-    trials2.addData('fixTrial2.started', fixTrial2.tStartRefresh)
-    trials2.addData('fixTrial2.stopped', fixTrial2.tStopRefresh)
+    trials2.addData('trial2Grid.started', trial2Grid.tStartRefresh)
+    trials2.addData('trial2Grid.stopped', trial2Grid.tStopRefresh)
+    trials2.addData('trial2Square.started', trial2Square.tStartRefresh)
+    trials2.addData('trial2Square.stopped', trial2Square.tStopRefresh)
+    trials2.addData('trial2Fix.started', trial2Fix.tStartRefresh)
+    trials2.addData('trial2Fix.stopped', trial2Fix.tStopRefresh)
     # check responses
-    if keyRespTrial2.keys in ['', [], None]:  # No response was made
-        keyRespTrial2.keys = None
+    if trial2Resp.keys in ['', [], None]:  # No response was made
+        trial2Resp.keys = None
         # was no response the correct answer?!
-        if str(corrAnsT2).lower() == 'none':
-           keyRespTrial2.corr = 1;  # correct non-response
+        if str(corrAns).lower() == 'none':
+           trial2Resp.corr = 1;  # correct non-response
         else:
-           keyRespTrial2.corr = 0;  # failed to respond (incorrectly)
+           trial2Resp.corr = 0;  # failed to respond (incorrectly)
     # store data for trials2 (TrialHandler)
-    trials2.addData('keyRespTrial2.keys',keyRespTrial2.keys)
-    trials2.addData('keyRespTrial2.corr', keyRespTrial2.corr)
-    if keyRespTrial2.keys != None:  # we had a response
-        trials2.addData('keyRespTrial2.rt', keyRespTrial2.rt)
-    trials2.addData('keyRespTrial2.started', keyRespTrial2.tStartRefresh)
-    trials2.addData('keyRespTrial2.stopped', keyRespTrial2.tStopRefresh)
+    trials2.addData('trial2Resp.keys',trial2Resp.keys)
+    trials2.addData('trial2Resp.corr', trial2Resp.corr)
+    if trial2Resp.keys != None:  # we had a response
+        trials2.addData('trial2Resp.rt', trial2Resp.rt)
+    trials2.addData('trial2Resp.started', trial2Resp.tStartRefresh)
+    trials2.addData('trial2Resp.stopped', trial2Resp.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1 repeats of 'trials2'
@@ -1117,12 +1117,12 @@ for thisTrials3 in trials3:
     continueRoutine = True
     routineTimer.add(2.000000)
     # update component parameters for each repeat
-    tarSquare3.setPos([loc1T3,loc2T3])
-    keyRespTrial3.keys = []
-    keyRespTrial3.rt = []
-    _keyRespTrial3_allKeys = []
+    trial3Square.setPos([loc1,loc2])
+    trial3Resp.keys = []
+    trial3Resp.rt = []
+    _trial3Resp_allKeys = []
     # keep track of which components have finished
-    trial3Components = [gridLines3, tarSquare3, fixTrial3, keyRespTrial3]
+    trial3Components = [trial3Grid, trial3Square, trial3Fix, trial3Resp]
     for thisComponent in trial3Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -1145,89 +1145,89 @@ for thisTrials3 in trials3:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *gridLines3* updates
-        if gridLines3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial3Grid* updates
+        if trial3Grid.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            gridLines3.frameNStart = frameN  # exact frame index
-            gridLines3.tStart = t  # local t and not account for scr refresh
-            gridLines3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(gridLines3, 'tStartRefresh')  # time at next scr refresh
-            gridLines3.setAutoDraw(True)
-        if gridLines3.status == STARTED:
+            trial3Grid.frameNStart = frameN  # exact frame index
+            trial3Grid.tStart = t  # local t and not account for scr refresh
+            trial3Grid.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial3Grid, 'tStartRefresh')  # time at next scr refresh
+            trial3Grid.setAutoDraw(True)
+        if trial3Grid.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > gridLines3.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > trial3Grid.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
-                gridLines3.tStop = t  # not accounting for scr refresh
-                gridLines3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(gridLines3, 'tStopRefresh')  # time at next scr refresh
-                gridLines3.setAutoDraw(False)
+                trial3Grid.tStop = t  # not accounting for scr refresh
+                trial3Grid.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial3Grid, 'tStopRefresh')  # time at next scr refresh
+                trial3Grid.setAutoDraw(False)
         
-        # *tarSquare3* updates
-        if tarSquare3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # *trial3Square* updates
+        if trial3Square.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            tarSquare3.frameNStart = frameN  # exact frame index
-            tarSquare3.tStart = t  # local t and not account for scr refresh
-            tarSquare3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(tarSquare3, 'tStartRefresh')  # time at next scr refresh
-            tarSquare3.setAutoDraw(True)
-        if tarSquare3.status == STARTED:
+            trial3Square.frameNStart = frameN  # exact frame index
+            trial3Square.tStart = t  # local t and not account for scr refresh
+            trial3Square.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial3Square, 'tStartRefresh')  # time at next scr refresh
+            trial3Square.setAutoDraw(True)
+        if trial3Square.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > tarSquare3.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial3Square.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                tarSquare3.tStop = t  # not accounting for scr refresh
-                tarSquare3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(tarSquare3, 'tStopRefresh')  # time at next scr refresh
-                tarSquare3.setAutoDraw(False)
+                trial3Square.tStop = t  # not accounting for scr refresh
+                trial3Square.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial3Square, 'tStopRefresh')  # time at next scr refresh
+                trial3Square.setAutoDraw(False)
         
-        # *fixTrial3* updates
-        if fixTrial3.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
+        # *trial3Fix* updates
+        if trial3Fix.status == NOT_STARTED and tThisFlip >= 1.0-frameTolerance:
             # keep track of start time/frame for later
-            fixTrial3.frameNStart = frameN  # exact frame index
-            fixTrial3.tStart = t  # local t and not account for scr refresh
-            fixTrial3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixTrial3, 'tStartRefresh')  # time at next scr refresh
-            fixTrial3.setAutoDraw(True)
-        if fixTrial3.status == STARTED:
+            trial3Fix.frameNStart = frameN  # exact frame index
+            trial3Fix.tStart = t  # local t and not account for scr refresh
+            trial3Fix.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial3Fix, 'tStartRefresh')  # time at next scr refresh
+            trial3Fix.setAutoDraw(True)
+        if trial3Fix.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixTrial3.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > trial3Fix.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                fixTrial3.tStop = t  # not accounting for scr refresh
-                fixTrial3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(fixTrial3, 'tStopRefresh')  # time at next scr refresh
-                fixTrial3.setAutoDraw(False)
+                trial3Fix.tStop = t  # not accounting for scr refresh
+                trial3Fix.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial3Fix, 'tStopRefresh')  # time at next scr refresh
+                trial3Fix.setAutoDraw(False)
         
-        # *keyRespTrial3* updates
+        # *trial3Resp* updates
         waitOnFlip = False
-        if keyRespTrial3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if trial3Resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            keyRespTrial3.frameNStart = frameN  # exact frame index
-            keyRespTrial3.tStart = t  # local t and not account for scr refresh
-            keyRespTrial3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(keyRespTrial3, 'tStartRefresh')  # time at next scr refresh
-            keyRespTrial3.status = STARTED
+            trial3Resp.frameNStart = frameN  # exact frame index
+            trial3Resp.tStart = t  # local t and not account for scr refresh
+            trial3Resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(trial3Resp, 'tStartRefresh')  # time at next scr refresh
+            trial3Resp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
-            win.callOnFlip(keyRespTrial3.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(keyRespTrial3.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if keyRespTrial3.status == STARTED:
+            win.callOnFlip(trial3Resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(trial3Resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if trial3Resp.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > keyRespTrial3.tStartRefresh + 2.0-frameTolerance:
+            if tThisFlipGlobal > trial3Resp.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
-                keyRespTrial3.tStop = t  # not accounting for scr refresh
-                keyRespTrial3.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(keyRespTrial3, 'tStopRefresh')  # time at next scr refresh
-                keyRespTrial3.status = FINISHED
-        if keyRespTrial3.status == STARTED and not waitOnFlip:
-            theseKeys = keyRespTrial3.getKeys(keyList=['space'], waitRelease=False)
-            _keyRespTrial3_allKeys.extend(theseKeys)
-            if len(_keyRespTrial3_allKeys):
-                keyRespTrial3.keys = _keyRespTrial3_allKeys[-1].name  # just the last key pressed
-                keyRespTrial3.rt = _keyRespTrial3_allKeys[-1].rt
+                trial3Resp.tStop = t  # not accounting for scr refresh
+                trial3Resp.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(trial3Resp, 'tStopRefresh')  # time at next scr refresh
+                trial3Resp.status = FINISHED
+        if trial3Resp.status == STARTED and not waitOnFlip:
+            theseKeys = trial3Resp.getKeys(keyList=['space'], waitRelease=False)
+            _trial3Resp_allKeys.extend(theseKeys)
+            if len(_trial3Resp_allKeys):
+                trial3Resp.keys = _trial3Resp_allKeys[-1].name  # just the last key pressed
+                trial3Resp.rt = _trial3Resp_allKeys[-1].rt
                 # was this correct?
-                if (keyRespTrial3.keys == str(corrAnsT3)) or (keyRespTrial3.keys == corrAnsT3):
-                    keyRespTrial3.corr = 1
+                if (trial3Resp.keys == str(corrAns)) or (trial3Resp.keys == corrAns):
+                    trial3Resp.corr = 1
                 else:
-                    keyRespTrial3.corr = 0
+                    trial3Resp.corr = 0
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1250,27 +1250,27 @@ for thisTrials3 in trials3:
     for thisComponent in trial3Components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials3.addData('gridLines3.started', gridLines3.tStartRefresh)
-    trials3.addData('gridLines3.stopped', gridLines3.tStopRefresh)
-    trials3.addData('tarSquare3.started', tarSquare3.tStartRefresh)
-    trials3.addData('tarSquare3.stopped', tarSquare3.tStopRefresh)
-    trials3.addData('fixTrial3.started', fixTrial3.tStartRefresh)
-    trials3.addData('fixTrial3.stopped', fixTrial3.tStopRefresh)
+    trials3.addData('trial3Grid.started', trial3Grid.tStartRefresh)
+    trials3.addData('trial3Grid.stopped', trial3Grid.tStopRefresh)
+    trials3.addData('trial3Square.started', trial3Square.tStartRefresh)
+    trials3.addData('trial3Square.stopped', trial3Square.tStopRefresh)
+    trials3.addData('trial3Fix.started', trial3Fix.tStartRefresh)
+    trials3.addData('trial3Fix.stopped', trial3Fix.tStopRefresh)
     # check responses
-    if keyRespTrial3.keys in ['', [], None]:  # No response was made
-        keyRespTrial3.keys = None
+    if trial3Resp.keys in ['', [], None]:  # No response was made
+        trial3Resp.keys = None
         # was no response the correct answer?!
-        if str(corrAnsT3).lower() == 'none':
-           keyRespTrial3.corr = 1;  # correct non-response
+        if str(corrAns).lower() == 'none':
+           trial3Resp.corr = 1;  # correct non-response
         else:
-           keyRespTrial3.corr = 0;  # failed to respond (incorrectly)
+           trial3Resp.corr = 0;  # failed to respond (incorrectly)
     # store data for trials3 (TrialHandler)
-    trials3.addData('keyRespTrial3.keys',keyRespTrial3.keys)
-    trials3.addData('keyRespTrial3.corr', keyRespTrial3.corr)
-    if keyRespTrial3.keys != None:  # we had a response
-        trials3.addData('keyRespTrial3.rt', keyRespTrial3.rt)
-    trials3.addData('keyRespTrial3.started', keyRespTrial3.tStartRefresh)
-    trials3.addData('keyRespTrial3.stopped', keyRespTrial3.tStopRefresh)
+    trials3.addData('trial3Resp.keys',trial3Resp.keys)
+    trials3.addData('trial3Resp.corr', trial3Resp.corr)
+    if trial3Resp.keys != None:  # we had a response
+        trials3.addData('trial3Resp.rt', trial3Resp.rt)
+    trials3.addData('trial3Resp.started', trial3Resp.tStartRefresh)
+    trials3.addData('trial3Resp.stopped', trial3Resp.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1 repeats of 'trials3'

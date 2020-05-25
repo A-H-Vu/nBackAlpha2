@@ -111,30 +111,30 @@ var keyResp1;
 var fixation1Clock;
 var fix1;
 var trial1Clock;
-var gridLines1;
-var tarSquare1;
-var fixTrial1;
-var keyRespTrial1;
+var trial1Grid;
+var trial1Square;
+var trial1Fix;
+var trial1Resp;
 var instructions2Clock;
 var instr2;
 var keyResp2;
 var fixation2Clock;
 var fix2;
 var trial2Clock;
-var gridLines2;
-var tarSquare2;
-var fixTrial2;
-var keyRespTrial2;
+var trial2Grid;
+var trial2Square;
+var trial2Fix;
+var trial2Resp;
 var instructions3Clock;
 var instr3;
 var keyResp3;
 var fixation3Clock;
 var fix3;
 var trial3Clock;
-var gridLines3;
-var tarSquare3;
-var fixTrial3;
-var keyRespTrial3;
+var trial3Grid;
+var trial3Square;
+var trial3Fix;
+var trial3Resp;
 var endClock;
 var thanks;
 var globalClock;
@@ -170,17 +170,17 @@ function experimentInit() {
   
   // Initialize components for Routine "trial1"
   trial1Clock = new util.Clock();
-  gridLines1 = new visual.ImageStim({
+  trial1Grid = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'gridLines1', units : undefined, 
+    name : 'trial1Grid', units : undefined, 
     image : 'grid.png', mask : undefined,
     ori : 0, pos : [0, 0], size : [0.6, 0.6],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : 0.0 
   });
-  tarSquare1 = new visual.Rect ({
-    win: psychoJS.window, name: 'tarSquare1', 
+  trial1Square = new visual.Rect ({
+    win: psychoJS.window, name: 'trial1Square', 
     width: [0.15, 0.15][0], height: [0.15, 0.15][1],
     ori: 0.0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
@@ -188,9 +188,9 @@ function experimentInit() {
     opacity: 1, depth: -1, interpolate: true,
   });
   
-  fixTrial1 = new visual.TextStim({
+  trial1Fix = new visual.TextStim({
     win: psychoJS.window,
-    name: 'fixTrial1',
+    name: 'trial1Fix',
     text: '+',
     font: 'Arial',
     units: undefined, 
@@ -199,7 +199,7 @@ function experimentInit() {
     depth: -2.0 
   });
   
-  keyRespTrial1 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  trial1Resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "instructions2"
   instructions2Clock = new util.Clock();
@@ -231,17 +231,17 @@ function experimentInit() {
   
   // Initialize components for Routine "trial2"
   trial2Clock = new util.Clock();
-  gridLines2 = new visual.ImageStim({
+  trial2Grid = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'gridLines2', units : undefined, 
+    name : 'trial2Grid', units : undefined, 
     image : 'grid.png', mask : undefined,
     ori : 0, pos : [0, 0], size : [0.6, 0.6],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : 0.0 
   });
-  tarSquare2 = new visual.Rect ({
-    win: psychoJS.window, name: 'tarSquare2', 
+  trial2Square = new visual.Rect ({
+    win: psychoJS.window, name: 'trial2Square', 
     width: [0.15, 0.15][0], height: [0.15, 0.15][1],
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
@@ -249,9 +249,9 @@ function experimentInit() {
     opacity: 1, depth: -1, interpolate: true,
   });
   
-  fixTrial2 = new visual.TextStim({
+  trial2Fix = new visual.TextStim({
     win: psychoJS.window,
-    name: 'fixTrial2',
+    name: 'trial2Fix',
     text: '+',
     font: 'Arial',
     units: undefined, 
@@ -260,14 +260,14 @@ function experimentInit() {
     depth: -2.0 
   });
   
-  keyRespTrial2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  trial2Resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "instructions3"
   instructions3Clock = new util.Clock();
   instr3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr3',
-    text: 'This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on one trial before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue.',
+    text: 'This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on two trials before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue.',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
@@ -292,17 +292,17 @@ function experimentInit() {
   
   // Initialize components for Routine "trial3"
   trial3Clock = new util.Clock();
-  gridLines3 = new visual.ImageStim({
+  trial3Grid = new visual.ImageStim({
     win : psychoJS.window,
-    name : 'gridLines3', units : undefined, 
+    name : 'trial3Grid', units : undefined, 
     image : 'grid.png', mask : undefined,
     ori : 0, pos : [0, 0], size : [0.6, 0.6],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : 0.0 
   });
-  tarSquare3 = new visual.Rect ({
-    win: psychoJS.window, name: 'tarSquare3', 
+  trial3Square = new visual.Rect ({
+    win: psychoJS.window, name: 'trial3Square', 
     width: [0.15, 0.15][0], height: [0.15, 0.15][1],
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
@@ -310,9 +310,9 @@ function experimentInit() {
     opacity: 1, depth: -1, interpolate: true,
   });
   
-  fixTrial3 = new visual.TextStim({
+  trial3Fix = new visual.TextStim({
     win: psychoJS.window,
-    name: 'fixTrial3',
+    name: 'trial3Fix',
     text: '+',
     font: 'Arial',
     units: undefined, 
@@ -321,7 +321,7 @@ function experimentInit() {
     depth: -2.0 
   });
   
-  keyRespTrial3 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  trial3Resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "end"
   endClock = new util.Clock();
@@ -653,7 +653,7 @@ function trials3LoopEnd() {
 }
 
 
-var _keyRespTrial1_allKeys;
+var _trial1Resp_allKeys;
 var trial1Components;
 function trial1RoutineBegin(trials) {
   return function () {
@@ -663,16 +663,16 @@ function trial1RoutineBegin(trials) {
     frameN = -1;
     routineTimer.add(2.000000);
     // update component parameters for each repeat
-    tarSquare1.setPos([loc1T1, loc2T1]);
-    keyRespTrial1.keys = undefined;
-    keyRespTrial1.rt = undefined;
-    _keyRespTrial1_allKeys = [];
+    trial1Square.setPos([loc1, loc2]);
+    trial1Resp.keys = undefined;
+    trial1Resp.rt = undefined;
+    _trial1Resp_allKeys = [];
     // keep track of which components have finished
     trial1Components = [];
-    trial1Components.push(gridLines1);
-    trial1Components.push(tarSquare1);
-    trial1Components.push(fixTrial1);
-    trial1Components.push(keyRespTrial1);
+    trial1Components.push(trial1Grid);
+    trial1Components.push(trial1Square);
+    trial1Components.push(trial1Fix);
+    trial1Components.push(trial1Resp);
     
     for (const thisComponent of trial1Components)
       if ('status' in thisComponent)
@@ -692,76 +692,76 @@ function trial1RoutineEachFrame(trials) {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *gridLines1* updates
-    if (t >= 0.0 && gridLines1.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial1Grid* updates
+    if (t >= 0.0 && trial1Grid.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      gridLines1.tStart = t;  // (not accounting for frame time here)
-      gridLines1.frameNStart = frameN;  // exact frame index
+      trial1Grid.tStart = t;  // (not accounting for frame time here)
+      trial1Grid.frameNStart = frameN;  // exact frame index
       
-      gridLines1.setAutoDraw(true);
+      trial1Grid.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (gridLines1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      gridLines1.setAutoDraw(false);
+    if (trial1Grid.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial1Grid.setAutoDraw(false);
     }
     
-    // *tarSquare1* updates
-    if (t >= 0.0 && tarSquare1.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial1Square* updates
+    if (t >= 0.0 && trial1Square.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      tarSquare1.tStart = t;  // (not accounting for frame time here)
-      tarSquare1.frameNStart = frameN;  // exact frame index
+      trial1Square.tStart = t;  // (not accounting for frame time here)
+      trial1Square.frameNStart = frameN;  // exact frame index
       
-      tarSquare1.setAutoDraw(true);
+      trial1Square.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (tarSquare1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      tarSquare1.setAutoDraw(false);
+    if (trial1Square.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial1Square.setAutoDraw(false);
     }
     
-    // *fixTrial1* updates
-    if (t >= 1.0 && fixTrial1.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial1Fix* updates
+    if (t >= 1.0 && trial1Fix.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixTrial1.tStart = t;  // (not accounting for frame time here)
-      fixTrial1.frameNStart = frameN;  // exact frame index
+      trial1Fix.tStart = t;  // (not accounting for frame time here)
+      trial1Fix.frameNStart = frameN;  // exact frame index
       
-      fixTrial1.setAutoDraw(true);
+      trial1Fix.setAutoDraw(true);
     }
 
     frameRemains = 1.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixTrial1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixTrial1.setAutoDraw(false);
+    if (trial1Fix.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial1Fix.setAutoDraw(false);
     }
     
-    // *keyRespTrial1* updates
-    if (t >= 0.0 && keyRespTrial1.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial1Resp* updates
+    if (t >= 0.0 && trial1Resp.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      keyRespTrial1.tStart = t;  // (not accounting for frame time here)
-      keyRespTrial1.frameNStart = frameN;  // exact frame index
+      trial1Resp.tStart = t;  // (not accounting for frame time here)
+      trial1Resp.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { keyRespTrial1.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial1.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial1.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { trial1Resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { trial1Resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { trial1Resp.clearEvents(); });
     }
 
     frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (keyRespTrial1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      keyRespTrial1.status = PsychoJS.Status.FINISHED;
+    if (trial1Resp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial1Resp.status = PsychoJS.Status.FINISHED;
   }
 
-    if (keyRespTrial1.status === PsychoJS.Status.STARTED) {
-      let theseKeys = keyRespTrial1.getKeys({keyList: ['space'], waitRelease: false});
-      _keyRespTrial1_allKeys = _keyRespTrial1_allKeys.concat(theseKeys);
-      if (_keyRespTrial1_allKeys.length > 0) {
-        keyRespTrial1.keys = _keyRespTrial1_allKeys[_keyRespTrial1_allKeys.length - 1].name;  // just the last key pressed
-        keyRespTrial1.rt = _keyRespTrial1_allKeys[_keyRespTrial1_allKeys.length - 1].rt;
+    if (trial1Resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = trial1Resp.getKeys({keyList: ['space'], waitRelease: false});
+      _trial1Resp_allKeys = _trial1Resp_allKeys.concat(theseKeys);
+      if (_trial1Resp_allKeys.length > 0) {
+        trial1Resp.keys = _trial1Resp_allKeys[_trial1Resp_allKeys.length - 1].name;  // just the last key pressed
+        trial1Resp.rt = _trial1Resp_allKeys[_trial1Resp_allKeys.length - 1].rt;
         // was this correct?
-        if (keyRespTrial1.keys == corrAnsT1) {
-            keyRespTrial1.corr = 1;
+        if (trial1Resp.keys == corrAns) {
+            trial1Resp.corr = 1;
         } else {
-            keyRespTrial1.corr = 0;
+            trial1Resp.corr = 0;
         }
       }
     }
@@ -802,21 +802,21 @@ function trial1RoutineEnd(trials) {
       }
     }
     // was no response the correct answer?!
-    if (keyRespTrial1.keys === undefined) {
-      if (['None','none',undefined].includes(corrAnsT1)) {
-         keyRespTrial1.corr = 1;  // correct non-response
+    if (trial1Resp.keys === undefined) {
+      if (['None','none',undefined].includes(corrAns)) {
+         trial1Resp.corr = 1;  // correct non-response
       } else {
-         keyRespTrial1.corr = 0;  // failed to respond (incorrectly)
+         trial1Resp.corr = 0;  // failed to respond (incorrectly)
       }
     }
     // store data for thisExp (ExperimentHandler)
-    psychoJS.experiment.addData('keyRespTrial1.keys', keyRespTrial1.keys);
-    psychoJS.experiment.addData('keyRespTrial1.corr', keyRespTrial1.corr);
-    if (typeof keyRespTrial1.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('keyRespTrial1.rt', keyRespTrial1.rt);
+    psychoJS.experiment.addData('trial1Resp.keys', trial1Resp.keys);
+    psychoJS.experiment.addData('trial1Resp.corr', trial1Resp.corr);
+    if (typeof trial1Resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('trial1Resp.rt', trial1Resp.rt);
         }
     
-    keyRespTrial1.stop();
+    trial1Resp.stop();
     return Scheduler.Event.NEXT;
   };
 }
@@ -1024,7 +1024,7 @@ function fixation2RoutineEnd(trials) {
 }
 
 
-var _keyRespTrial2_allKeys;
+var _trial2Resp_allKeys;
 var trial2Components;
 function trial2RoutineBegin(trials) {
   return function () {
@@ -1034,16 +1034,16 @@ function trial2RoutineBegin(trials) {
     frameN = -1;
     routineTimer.add(2.000000);
     // update component parameters for each repeat
-    tarSquare2.setPos([loc1T2, loc2T2]);
-    keyRespTrial2.keys = undefined;
-    keyRespTrial2.rt = undefined;
-    _keyRespTrial2_allKeys = [];
+    trial2Square.setPos([loc1, loc2]);
+    trial2Resp.keys = undefined;
+    trial2Resp.rt = undefined;
+    _trial2Resp_allKeys = [];
     // keep track of which components have finished
     trial2Components = [];
-    trial2Components.push(gridLines2);
-    trial2Components.push(tarSquare2);
-    trial2Components.push(fixTrial2);
-    trial2Components.push(keyRespTrial2);
+    trial2Components.push(trial2Grid);
+    trial2Components.push(trial2Square);
+    trial2Components.push(trial2Fix);
+    trial2Components.push(trial2Resp);
     
     for (const thisComponent of trial2Components)
       if ('status' in thisComponent)
@@ -1063,76 +1063,76 @@ function trial2RoutineEachFrame(trials) {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *gridLines2* updates
-    if (t >= 0.0 && gridLines2.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial2Grid* updates
+    if (t >= 0.0 && trial2Grid.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      gridLines2.tStart = t;  // (not accounting for frame time here)
-      gridLines2.frameNStart = frameN;  // exact frame index
+      trial2Grid.tStart = t;  // (not accounting for frame time here)
+      trial2Grid.frameNStart = frameN;  // exact frame index
       
-      gridLines2.setAutoDraw(true);
+      trial2Grid.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 2.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (gridLines2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      gridLines2.setAutoDraw(false);
+    if (trial2Grid.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial2Grid.setAutoDraw(false);
     }
     
-    // *tarSquare2* updates
-    if (t >= 0.0 && tarSquare2.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial2Square* updates
+    if (t >= 0.0 && trial2Square.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      tarSquare2.tStart = t;  // (not accounting for frame time here)
-      tarSquare2.frameNStart = frameN;  // exact frame index
+      trial2Square.tStart = t;  // (not accounting for frame time here)
+      trial2Square.frameNStart = frameN;  // exact frame index
       
-      tarSquare2.setAutoDraw(true);
+      trial2Square.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (tarSquare2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      tarSquare2.setAutoDraw(false);
+    if (trial2Square.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial2Square.setAutoDraw(false);
     }
     
-    // *fixTrial2* updates
-    if (t >= 1.0 && fixTrial2.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial2Fix* updates
+    if (t >= 1.0 && trial2Fix.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixTrial2.tStart = t;  // (not accounting for frame time here)
-      fixTrial2.frameNStart = frameN;  // exact frame index
+      trial2Fix.tStart = t;  // (not accounting for frame time here)
+      trial2Fix.frameNStart = frameN;  // exact frame index
       
-      fixTrial2.setAutoDraw(true);
+      trial2Fix.setAutoDraw(true);
     }
 
     frameRemains = 1.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixTrial2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixTrial2.setAutoDraw(false);
+    if (trial2Fix.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial2Fix.setAutoDraw(false);
     }
     
-    // *keyRespTrial2* updates
-    if (t >= 0.0 && keyRespTrial2.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial2Resp* updates
+    if (t >= 0.0 && trial2Resp.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      keyRespTrial2.tStart = t;  // (not accounting for frame time here)
-      keyRespTrial2.frameNStart = frameN;  // exact frame index
+      trial2Resp.tStart = t;  // (not accounting for frame time here)
+      trial2Resp.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { keyRespTrial2.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial2.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial2.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { trial2Resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { trial2Resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { trial2Resp.clearEvents(); });
     }
 
     frameRemains = 0.0 + 2.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (keyRespTrial2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      keyRespTrial2.status = PsychoJS.Status.FINISHED;
+    if (trial2Resp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial2Resp.status = PsychoJS.Status.FINISHED;
   }
 
-    if (keyRespTrial2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = keyRespTrial2.getKeys({keyList: ['space'], waitRelease: false});
-      _keyRespTrial2_allKeys = _keyRespTrial2_allKeys.concat(theseKeys);
-      if (_keyRespTrial2_allKeys.length > 0) {
-        keyRespTrial2.keys = _keyRespTrial2_allKeys[_keyRespTrial2_allKeys.length - 1].name;  // just the last key pressed
-        keyRespTrial2.rt = _keyRespTrial2_allKeys[_keyRespTrial2_allKeys.length - 1].rt;
+    if (trial2Resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = trial2Resp.getKeys({keyList: ['space'], waitRelease: false});
+      _trial2Resp_allKeys = _trial2Resp_allKeys.concat(theseKeys);
+      if (_trial2Resp_allKeys.length > 0) {
+        trial2Resp.keys = _trial2Resp_allKeys[_trial2Resp_allKeys.length - 1].name;  // just the last key pressed
+        trial2Resp.rt = _trial2Resp_allKeys[_trial2Resp_allKeys.length - 1].rt;
         // was this correct?
-        if (keyRespTrial2.keys == corrAnsT2) {
-            keyRespTrial2.corr = 1;
+        if (trial2Resp.keys == corrAns) {
+            trial2Resp.corr = 1;
         } else {
-            keyRespTrial2.corr = 0;
+            trial2Resp.corr = 0;
         }
       }
     }
@@ -1173,21 +1173,21 @@ function trial2RoutineEnd(trials) {
       }
     }
     // was no response the correct answer?!
-    if (keyRespTrial2.keys === undefined) {
-      if (['None','none',undefined].includes(corrAnsT2)) {
-         keyRespTrial2.corr = 1;  // correct non-response
+    if (trial2Resp.keys === undefined) {
+      if (['None','none',undefined].includes(corrAns)) {
+         trial2Resp.corr = 1;  // correct non-response
       } else {
-         keyRespTrial2.corr = 0;  // failed to respond (incorrectly)
+         trial2Resp.corr = 0;  // failed to respond (incorrectly)
       }
     }
     // store data for thisExp (ExperimentHandler)
-    psychoJS.experiment.addData('keyRespTrial2.keys', keyRespTrial2.keys);
-    psychoJS.experiment.addData('keyRespTrial2.corr', keyRespTrial2.corr);
-    if (typeof keyRespTrial2.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('keyRespTrial2.rt', keyRespTrial2.rt);
+    psychoJS.experiment.addData('trial2Resp.keys', trial2Resp.keys);
+    psychoJS.experiment.addData('trial2Resp.corr', trial2Resp.corr);
+    if (typeof trial2Resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('trial2Resp.rt', trial2Resp.rt);
         }
     
-    keyRespTrial2.stop();
+    trial2Resp.stop();
     return Scheduler.Event.NEXT;
   };
 }
@@ -1395,7 +1395,7 @@ function fixation3RoutineEnd(trials) {
 }
 
 
-var _keyRespTrial3_allKeys;
+var _trial3Resp_allKeys;
 var trial3Components;
 function trial3RoutineBegin(trials) {
   return function () {
@@ -1405,16 +1405,16 @@ function trial3RoutineBegin(trials) {
     frameN = -1;
     routineTimer.add(2.000000);
     // update component parameters for each repeat
-    tarSquare3.setPos([loc1T3, loc2T3]);
-    keyRespTrial3.keys = undefined;
-    keyRespTrial3.rt = undefined;
-    _keyRespTrial3_allKeys = [];
+    trial3Square.setPos([loc1, loc2]);
+    trial3Resp.keys = undefined;
+    trial3Resp.rt = undefined;
+    _trial3Resp_allKeys = [];
     // keep track of which components have finished
     trial3Components = [];
-    trial3Components.push(gridLines3);
-    trial3Components.push(tarSquare3);
-    trial3Components.push(fixTrial3);
-    trial3Components.push(keyRespTrial3);
+    trial3Components.push(trial3Grid);
+    trial3Components.push(trial3Square);
+    trial3Components.push(trial3Fix);
+    trial3Components.push(trial3Resp);
     
     for (const thisComponent of trial3Components)
       if ('status' in thisComponent)
@@ -1434,76 +1434,76 @@ function trial3RoutineEachFrame(trials) {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *gridLines3* updates
-    if (t >= 0.0 && gridLines3.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial3Grid* updates
+    if (t >= 0.0 && trial3Grid.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      gridLines3.tStart = t;  // (not accounting for frame time here)
-      gridLines3.frameNStart = frameN;  // exact frame index
+      trial3Grid.tStart = t;  // (not accounting for frame time here)
+      trial3Grid.frameNStart = frameN;  // exact frame index
       
-      gridLines3.setAutoDraw(true);
+      trial3Grid.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 2.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (gridLines3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      gridLines3.setAutoDraw(false);
+    if (trial3Grid.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial3Grid.setAutoDraw(false);
     }
     
-    // *tarSquare3* updates
-    if (t >= 0.0 && tarSquare3.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial3Square* updates
+    if (t >= 0.0 && trial3Square.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      tarSquare3.tStart = t;  // (not accounting for frame time here)
-      tarSquare3.frameNStart = frameN;  // exact frame index
+      trial3Square.tStart = t;  // (not accounting for frame time here)
+      trial3Square.frameNStart = frameN;  // exact frame index
       
-      tarSquare3.setAutoDraw(true);
+      trial3Square.setAutoDraw(true);
     }
 
     frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (tarSquare3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      tarSquare3.setAutoDraw(false);
+    if (trial3Square.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial3Square.setAutoDraw(false);
     }
     
-    // *fixTrial3* updates
-    if (t >= 1.0 && fixTrial3.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial3Fix* updates
+    if (t >= 1.0 && trial3Fix.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixTrial3.tStart = t;  // (not accounting for frame time here)
-      fixTrial3.frameNStart = frameN;  // exact frame index
+      trial3Fix.tStart = t;  // (not accounting for frame time here)
+      trial3Fix.frameNStart = frameN;  // exact frame index
       
-      fixTrial3.setAutoDraw(true);
+      trial3Fix.setAutoDraw(true);
     }
 
     frameRemains = 1.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixTrial3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixTrial3.setAutoDraw(false);
+    if (trial3Fix.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial3Fix.setAutoDraw(false);
     }
     
-    // *keyRespTrial3* updates
-    if (t >= 0.0 && keyRespTrial3.status === PsychoJS.Status.NOT_STARTED) {
+    // *trial3Resp* updates
+    if (t >= 0.0 && trial3Resp.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      keyRespTrial3.tStart = t;  // (not accounting for frame time here)
-      keyRespTrial3.frameNStart = frameN;  // exact frame index
+      trial3Resp.tStart = t;  // (not accounting for frame time here)
+      trial3Resp.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { keyRespTrial3.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial3.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { keyRespTrial3.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { trial3Resp.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { trial3Resp.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { trial3Resp.clearEvents(); });
     }
 
     frameRemains = 0.0 + 2.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (keyRespTrial3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      keyRespTrial3.status = PsychoJS.Status.FINISHED;
+    if (trial3Resp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      trial3Resp.status = PsychoJS.Status.FINISHED;
   }
 
-    if (keyRespTrial3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = keyRespTrial3.getKeys({keyList: ['space'], waitRelease: false});
-      _keyRespTrial3_allKeys = _keyRespTrial3_allKeys.concat(theseKeys);
-      if (_keyRespTrial3_allKeys.length > 0) {
-        keyRespTrial3.keys = _keyRespTrial3_allKeys[_keyRespTrial3_allKeys.length - 1].name;  // just the last key pressed
-        keyRespTrial3.rt = _keyRespTrial3_allKeys[_keyRespTrial3_allKeys.length - 1].rt;
+    if (trial3Resp.status === PsychoJS.Status.STARTED) {
+      let theseKeys = trial3Resp.getKeys({keyList: ['space'], waitRelease: false});
+      _trial3Resp_allKeys = _trial3Resp_allKeys.concat(theseKeys);
+      if (_trial3Resp_allKeys.length > 0) {
+        trial3Resp.keys = _trial3Resp_allKeys[_trial3Resp_allKeys.length - 1].name;  // just the last key pressed
+        trial3Resp.rt = _trial3Resp_allKeys[_trial3Resp_allKeys.length - 1].rt;
         // was this correct?
-        if (keyRespTrial3.keys == corrAnsT3) {
-            keyRespTrial3.corr = 1;
+        if (trial3Resp.keys == corrAns) {
+            trial3Resp.corr = 1;
         } else {
-            keyRespTrial3.corr = 0;
+            trial3Resp.corr = 0;
         }
       }
     }
@@ -1544,21 +1544,21 @@ function trial3RoutineEnd(trials) {
       }
     }
     // was no response the correct answer?!
-    if (keyRespTrial3.keys === undefined) {
-      if (['None','none',undefined].includes(corrAnsT3)) {
-         keyRespTrial3.corr = 1;  // correct non-response
+    if (trial3Resp.keys === undefined) {
+      if (['None','none',undefined].includes(corrAns)) {
+         trial3Resp.corr = 1;  // correct non-response
       } else {
-         keyRespTrial3.corr = 0;  // failed to respond (incorrectly)
+         trial3Resp.corr = 0;  // failed to respond (incorrectly)
       }
     }
     // store data for thisExp (ExperimentHandler)
-    psychoJS.experiment.addData('keyRespTrial3.keys', keyRespTrial3.keys);
-    psychoJS.experiment.addData('keyRespTrial3.corr', keyRespTrial3.corr);
-    if (typeof keyRespTrial3.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('keyRespTrial3.rt', keyRespTrial3.rt);
+    psychoJS.experiment.addData('trial3Resp.keys', trial3Resp.keys);
+    psychoJS.experiment.addData('trial3Resp.corr', trial3Resp.corr);
+    if (typeof trial3Resp.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('trial3Resp.rt', trial3Resp.rt);
         }
     
-    keyRespTrial3.stop();
+    trial3Resp.stop();
     return Scheduler.Event.NEXT;
   };
 }

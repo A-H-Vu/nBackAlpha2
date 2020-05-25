@@ -32,7 +32,7 @@
   </Settings>
   <Routines>
     <Routine name="trial1">
-      <ImageComponent name="gridLines1">
+      <ImageComponent name="trial1Grid">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -42,7 +42,7 @@
         <Param name="image" updates="constant" val="grid.png" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="gridLines1" valType="code"/>
+        <Param name="name" updates="None" val="trial1Grid" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -57,7 +57,7 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <PolygonComponent name="tarSquare1">
+      <PolygonComponent name="trial1Square">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
@@ -67,10 +67,10 @@
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="4" valType="int"/>
-        <Param name="name" updates="None" val="tarSquare1" valType="code"/>
+        <Param name="name" updates="None" val="trial1Square" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0.0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="[loc1T1,loc2T1]" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="[loc1,loc2]" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="rectangle" valType="str"/>
         <Param name="size" updates="constant" val="[0.15,0.15]" valType="code"/>
@@ -82,7 +82,7 @@
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
-      <TextComponent name="fixTrial1">
+      <TextComponent name="trial1Fix">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -91,7 +91,7 @@
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="fixTrial1" valType="code"/>
+        <Param name="name" updates="None" val="trial1Fix" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -106,14 +106,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="keyRespTrial1">
+      <KeyboardComponent name="trial1Resp">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="$corrAnsT1" valType="str"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="keyRespTrial1" valType="code"/>
+        <Param name="name" updates="None" val="trial1Resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -222,7 +222,7 @@
       </TextComponent>
     </Routine>
     <Routine name="trial2">
-      <ImageComponent name="gridLines2">
+      <ImageComponent name="trial2Grid">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -232,7 +232,7 @@
         <Param name="image" updates="constant" val="grid.png" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="gridLines2" valType="code"/>
+        <Param name="name" updates="None" val="trial2Grid" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -247,7 +247,7 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <PolygonComponent name="tarSquare2">
+      <PolygonComponent name="trial2Square">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
@@ -257,10 +257,10 @@
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="4" valType="int"/>
-        <Param name="name" updates="None" val="tarSquare2" valType="code"/>
+        <Param name="name" updates="None" val="trial2Square" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="[loc1T2,loc2T2]" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="[loc1,loc2]" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="rectangle" valType="str"/>
         <Param name="size" updates="constant" val="[0.15,0.15]" valType="code"/>
@@ -272,7 +272,7 @@
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
-      <TextComponent name="fixTrial2">
+      <TextComponent name="trial2Fix">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -281,7 +281,7 @@
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="fixTrial2" valType="code"/>
+        <Param name="name" updates="None" val="trial2Fix" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -296,14 +296,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="keyRespTrial2">
+      <KeyboardComponent name="trial2Resp">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="$corrAnsT2" valType="str"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="keyRespTrial2" valType="code"/>
+        <Param name="name" updates="None" val="trial2Resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -406,7 +406,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on one trial before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue." valType="str"/>
+        <Param name="text" updates="constant" val="This is the end of N-back-2 trials. You are about to start N-back-3 trials. This means that instead of pressing space whenever the square appears in the same position as on the position on two trials before, you are required to press space whenever the square appears in the same position as on the position three trials before. For example if the square appeared in left down corner on trial 1, you should press space if the square appears in the left down corner on trial 4. Press space to continue." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -430,7 +430,7 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="trial3">
-      <ImageComponent name="gridLines3">
+      <ImageComponent name="trial3Grid">
         <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -440,7 +440,7 @@
         <Param name="image" updates="constant" val="grid.png" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
-        <Param name="name" updates="None" val="gridLines3" valType="code"/>
+        <Param name="name" updates="None" val="trial3Grid" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -455,7 +455,7 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <PolygonComponent name="tarSquare3">
+      <PolygonComponent name="trial3Square">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="fillColor" updates="constant" val="$[1,1,1]" valType="str"/>
@@ -465,10 +465,10 @@
         <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="lineWidth" updates="constant" val="1" valType="code"/>
         <Param name="nVertices" updates="constant" val="4" valType="int"/>
-        <Param name="name" updates="None" val="tarSquare3" valType="code"/>
+        <Param name="name" updates="None" val="trial3Square" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="[loc1T3,loc2T3]" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="[loc1,loc2]" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="constant" val="rectangle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="code"/>
@@ -480,7 +480,7 @@
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
-      <TextComponent name="fixTrial3">
+      <TextComponent name="trial3Fix">
         <Param name="color" updates="constant" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -489,7 +489,7 @@
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
-        <Param name="name" updates="None" val="fixTrial3" valType="code"/>
+        <Param name="name" updates="None" val="trial3Fix" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -504,14 +504,14 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="keyRespTrial3">
+      <KeyboardComponent name="trial3Resp">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="$corrAnsT3" valType="str"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="keyRespTrial3" valType="code"/>
+        <Param name="name" updates="None" val="trial3Resp" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -555,7 +555,7 @@
     <Routine name="fixation1"/>
     <LoopInitiator loopType="TrialHandler" name="trials1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('squareT1', 6), ('loc1T1', 0.2), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 6), ('loc1T1', 0.2), ('loc2T1', 0.0), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 2), ('loc1T1', 0.0), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 9), ('loc1T1', 0.2), ('loc2T1', -0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 9), ('loc1T1', 0.2), ('loc2T1', -0.2), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 6), ('loc1T1', 0.2), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 4), ('loc1T1', -0.2), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 3), ('loc1T1', 0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 3), ('loc1T1', 0.2), ('loc2T1', 0.2), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 8), ('loc1T1', 0.0), ('loc2T1', -0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 2), ('loc1T1', 0.0), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 4), ('loc1T1', -0.2), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 4), ('loc1T1', -0.2), ('loc2T1', 0.0), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 8), ('loc1T1', 0.0), ('loc2T1', -0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 5), ('loc1T1', 0.0), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 5), ('loc1T1', 0.0), ('loc2T1', 0.0), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 3), ('loc1T1', 0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 6), ('loc1T1', 0.2), ('loc2T1', 0.0), ('corrAnsT1', None)]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 3), ('loc1T1', 0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 2), ('loc1T1', 0.0), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 1), ('loc1T1', -0.2), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 7), ('loc1T1', -0.2), ('loc2T1', -0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 7), ('loc1T1', -0.2), ('loc2T1', -0.2), ('corrAnsT1', 'space')]), OrderedDict([('squareT1', 2), ('loc1T1', 0.0), ('loc2T1', 0.2), ('corrAnsT1', None)]), OrderedDict([('squareT1', 6), ('loc1T1', 0.2), ('loc2T1', 0.0), ('corrAnsT1', None)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 8), ('loc1', 0.0), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 8), ('loc1', 0.0), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="nBackCond1.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -570,7 +570,7 @@
     <Routine name="fixation2"/>
     <LoopInitiator loopType="TrialHandler" name="trials2">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('squareT2', 5), ('loc1T2', 0.0), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 2), ('loc1T2', 0.0), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 6), ('loc1T2', 0.2), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 9), ('loc1T2', 0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 3), ('loc1T2', 0.2), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 9), ('loc1T2', 0.2), ('loc2T2', -0.2), ('corrAnsT2', 'space')]), OrderedDict([('squareT2', 7), ('loc1T2', -0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 1), ('loc1T2', -0.2), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 5), ('loc1T2', 0.0), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 7), ('loc1T2', -0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 5), ('loc1T2', 0.0), ('loc2T2', 0.0), ('corrAnsT2', 'space')]), OrderedDict([('squareT2', 6), ('loc1T2', 0.2), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 3), ('loc1T2', 0.2), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 6), ('loc1T2', 0.2), ('loc2T2', 0.0), ('corrAnsT2', 'space')]), OrderedDict([('squareT2', 8), ('loc1T2', 0.0), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 9), ('loc1T2', 0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 9), ('loc1T2', 0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 1), ('loc1T2', -0.2), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 3), ('loc1T2', 0.2), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 5), ('loc1T2', 0.0), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 3), ('loc1T2', 0.2), ('loc2T2', 0.2), ('corrAnsT2', 'space')]), OrderedDict([('squareT2', 4), ('loc1T2', -0.2), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 7), ('loc1T2', -0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 4), ('loc1T2', -0.2), ('loc2T2', 0.0), ('corrAnsT2', 'space')]), OrderedDict([('squareT2', 4), ('loc1T2', -0.2), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 5), ('loc1T2', 0.0), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 2), ('loc1T2', 0.0), ('loc2T2', 0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 6), ('loc1T2', 0.2), ('loc2T2', 0.0), ('corrAnsT2', None)]), OrderedDict([('squareT2', 7), ('loc1T2', -0.2), ('loc2T2', -0.2), ('corrAnsT2', None)]), OrderedDict([('squareT2', 6), ('loc1T2', 0.2), ('loc2T2', 0.0), ('corrAnsT2', 'space')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 8), ('loc1', 0.0), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', 'space')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="nBackCond2.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -585,7 +585,7 @@
     <Routine name="fixation3"/>
     <LoopInitiator loopType="TrialHandler" name="trials3">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 2), ('loc1T3', 0.0), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 9), ('loc1T3', -0.2), ('loc2T3', -0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', -0.2), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 3), ('loc1T3', 0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 9), ('loc1T3', 0.2), ('loc2T3', -0.2), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 7), ('loc1T3', -0.2), ('loc2T3', -0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 1), ('loc1T3', -0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 6), ('loc1T3', 0.2), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 7), ('loc1T3', -0.2), ('loc2T3', -0.2), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 6), ('loc1T3', 0.2), ('loc2T3', 0.0), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 3), ('loc1T3', 0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 1), ('loc1T3', -0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 8), ('loc1T3', 0.0), ('loc2T3', -0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 9), ('loc1T3', 0.2), ('loc2T3', -0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 1), ('loc1T3', -0.2), ('loc2T3', 0.2), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 3), ('loc1T3', 0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 3), ('loc1T3', 0.2), ('loc2T3', 0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 3), ('loc1T3', 0.2), ('loc2T3', 0.2), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 4), ('loc1T3', -0.2), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 7), ('loc1T3', -0.2), ('loc2T3', -0.2), ('corrAnsT3', None)]), OrderedDict([('squareT3', 4), ('loc1T3', -0.2), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 4), ('loc1T3', -0.2), ('loc2T3', 0.0), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 2), ('loc1T3', 0.2), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 6), ('loc1T3', 0.2), ('loc2T3', 0.0), ('corrAnsT3', None)]), OrderedDict([('squareT3', 5), ('loc1T3', 0.0), ('loc2T3', 0.0), ('corrAnsT3', 'space')]), OrderedDict([('squareT3', 2), ('loc1T3', 0.2), ('loc2T3', 0.0), ('corrAnsT3', 'space')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.0), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', 'space')]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 8), ('loc1', 0.0), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 9), ('loc1', 0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 1), ('loc1', -0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 3), ('loc1', 0.2), ('loc2', 0.2), ('corrAns', 'space')]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 7), ('loc1', -0.2), ('loc2', -0.2), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 4), ('loc1', -0.2), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 2), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 6), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', None)]), OrderedDict([('square', 5), ('loc1', 0.0), ('loc2', 0.0), ('corrAns', 'space')]), OrderedDict([('square', 2), ('loc1', 0.2), ('loc2', 0.0), ('corrAns', 'space')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="nBackCond3.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
